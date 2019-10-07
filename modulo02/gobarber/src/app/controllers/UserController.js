@@ -25,6 +25,20 @@ class UserController {
             return res.status(400).json(error);
         }
     }
+
+    async update(req, res) {
+        try {
+            if (req.userId !== parseInt(req.params.id_user, 10)) {
+                return res.status(401).json({
+                    error: 'User does not update another user',
+                });
+            }
+
+            return res.json({ ok: true });
+        } catch (error) {
+            return res.status(400).json(error.message);
+        }
+    }
 }
 
 export default new UserController();
