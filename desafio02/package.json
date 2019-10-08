@@ -1,0 +1,14 @@
+{
+  "name": "desafio02",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "nodemon": "^1.19.3",
+    "prettier": "^1.18.2",
+    "sucrase": "^3.10.1"
+  }
+}
